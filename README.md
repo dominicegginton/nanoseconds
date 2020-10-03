@@ -18,7 +18,7 @@
 Install via the [**Swift Package Manger**](https://swift.org/package-manager/) by declaring **Nanoseconds** as a dependency in your  `Package.swift`:
 
 ``` swift
-.package(url: "https://github.com/dominicegginton/Nanoseconds", from: "0.0.1")
+.package(url: "https://github.com/dominicegginton/Nanoseconds", from: "0.0.2")
 ```
 
 Remember to add **Nanoseconds** to your target as a dependency.
