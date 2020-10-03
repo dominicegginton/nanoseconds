@@ -1,10 +1,10 @@
-# Nanoseconds
-
- ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dominicegginton/Nanoseconds/CI?label=CI) ![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/dominicegginton/Nanoseconds?include_prereleases&label=release)
-
-> 🕐 Simple high resolution timing for Swift
-
-Nanoseconds is a wrapper around `DispatchTime.now()` providing you with timestamp with nanosecond accuracy.
+<h1 align='center'>Nanoseconds</h1>
+<h4 align='center'>Simple high resolution timing for Swift</h4>
+<div align='center'>
+  <img src='https://img.shields.io/github/workflow/status/dominicegginton/Nanoseconds/CI?label=CI'>
+  <img src='https://img.shields.io/github/v/tag/dominicegginton/Nanoseconds?include_prereleases&label=release'>
+  <img src="https://img.shields.io/github/license/dominicegginton/Nanoseconds">
+</div>
 
 ## Key Features
 
