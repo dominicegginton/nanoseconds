@@ -23,15 +23,18 @@ Install via the [**Swift Package Manger**](https://swift.org/package-manager/) b
 
 Remember to add **Nanoseconds** to your target as a dependency.
 
-## Usage
+## Documentation
 
-Creating high resolution timestamps with nanosecond accuracy is easy:
+### Creating Timestamps
+Creating high resolution timestamps with nanosecond accuracy is easy, simply create a instant of `Nanoseconds` struct
 
 ```  swift
 let foo = Nanoseconds()
 ```
 
-Use built-in operators overloads to calculate a [**TimeInterval**](https://developer.apple.com/documentation/foundation/timeinterval):
+### Creating Time Intervals
+
+Use the built-in operators overloads to easily calculate and initialize [**TimeInterval**](https://developer.apple.com/documentation/foundation/timeinterval):
 
 ``` swift
 let start = Nanoseconds()
@@ -41,7 +44,14 @@ let duration = end - start
 print(duration)  //=> 1004222113.0
 ```
 
-To convert high resolutions [**TimeInterval**](https://developer.apple.com/documentation/foundation/timeinterval) objects from nanosecond accuracy use a provided extention:
+### Convert Time Intervals from Nanoseconds to Other Units 
+To convert [**TimeInterval**](https://developer.apple.com/documentation/foundation/timeinterval) objects from nanosecond to a different unit simply use a provided extension:
+
+- microseconds
+- milliseconds
+- seconds
+- minutes
+- hours
 
 ``` swift
 print(duration.milliseconds)  //=> 1004.22211
