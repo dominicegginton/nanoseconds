@@ -15,13 +15,13 @@ Nanoseconds is a wrapper around `DispatchTime.now()` providing you with timestam
 
 ## Install
 
-Install via the [**Swift Package Manger**](https://swift.org/package-manager/) by declaring **Spinner** as a dependency in your  `Package.swift`:
+Install via the [**Swift Package Manger**](https://swift.org/package-manager/) by declaring **Nanoseconds** as a dependency in your  `Package.swift`:
 
 ``` swift
 .package(url: "https://github.com/dominicegginton/Nanoseconds", from: "0.0.1")
 ```
 
-Remember to add **Spinner** to your target as a dependency.
+Remember to add **Nanoseconds** to your target as a dependency.
 
 ## Usage
 
