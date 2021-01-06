@@ -22,4 +22,14 @@ final class NanosecondsTests: XCTestCase {
         let hours: TimeInterval = TimeInterval(hours: 1)
         XCTAssertEqual(hours, 3.6e+12)
     }
+
+    func testTimeIntervalUnitConversion () {
+        let minute: TimeInterval = TimeInterval(minutes: 1)
+        XCTAssertEqual(minute, 6e+10)
+        XCTAssertEqual(minute.microseconds, 6e+7)
+        XCTAssertEqual(minute.milliseconds, 60000)
+        XCTAssertEqual(minute.seconds, 60)
+        XCTAssertEqual(minute.minutes, 1)
+        XCTAssertEqual(minute.hours, 0.016666666666666666)
+    }
 }
