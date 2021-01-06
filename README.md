@@ -59,3 +59,10 @@ To convert [**TimeInterval**](https://developer.apple.com/documentation/foundati
 print(duration.milliseconds)  //=> 1004.22211
 print(duration.seconds)  //=> 1.004222113
 ```
+#### Create TimeIntervals Objects from any time unit
+
+Use a provided init method to create a [**TimeInterval**](https://developer.apple.com/documentation/foundation/timeinterval) object from any time unit
+
+``` swift
+let duration = TimeInterval(seconds: 8)
+```
