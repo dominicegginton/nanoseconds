@@ -30,7 +30,7 @@ extension TimeInterval {
     public init (hours: Double) { self = hours * 3.6e+12 }
     public var microseconds: Double { return self / 1000 }
     public var milliseconds: Double { return self / 1e+6 }
-    public var seconds: Double { return self / 1e+9 } 
-    public var minutes: Double { return self / 6e+10 } 
-    public var hours: Double { return self / 3.6e+12 } 
+    public var seconds: Double { return self / 1e+9 }
+    public var minutes: Double { return self / 6e+10 }
+    public var hours: Double { return self / 3.6e+12 }
 }
