@@ -28,6 +28,7 @@ extension TimeInterval {
     public init (seconds: Double) { self = seconds * 1e+9 }
     public init (minutes: Double) { self = minutes * 6e+10 }
     public init (hours: Double) { self = hours * 3.6e+12 }
+    public var nanoseconds: Double { return self }
     public var microseconds: Double { return self / 1000 }
     public var milliseconds: Double { return self / 1e+6 }
     public var seconds: Double { return self / 1e+9 }

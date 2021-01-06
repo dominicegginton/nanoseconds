@@ -26,6 +26,7 @@ final class NanosecondsTests: XCTestCase {
     func testTimeIntervalUnitConversion () {
         let minute: TimeInterval = TimeInterval(minutes: 1)
         XCTAssertEqual(minute, 6e+10)
+        XCTAssertEqual(minute.nanoseconds, 6e+10)
         XCTAssertEqual(minute.microseconds, 6e+7)
         XCTAssertEqual(minute.milliseconds, 60000)
         XCTAssertEqual(minute.seconds, 60)
