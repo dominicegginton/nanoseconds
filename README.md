@@ -44,7 +44,8 @@ let duration = end - start
 print(duration)  //=> 1004222113.0
 ```
 
-#### Convert Time Intervals from Nanoseconds to Other Units 
+#### Convert Time Intervals from Nanoseconds to Other Time Units
+
 To convert [**TimeInterval**](https://developer.apple.com/documentation/foundation/timeinterval) objects from nanosecond to a different unit simply use a provided extension:
 
 - nanoseconds
