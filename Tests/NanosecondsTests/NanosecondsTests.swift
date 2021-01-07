@@ -2,10 +2,22 @@ import XCTest
 @testable import Nanoseconds
 
 final class NanosecondsTests: XCTestCase {
-    func testResolution() {
-        let start = Nanoseconds()
-        let end = Nanoseconds()
+    func testNowResolution () {
+        let start = Now()
+        let end = Now()
         XCTAssertGreaterThan(end, start)
+    }
+
+    func testNowComparable () {
+        let start = Now()
+        let end = Now()
+        XCTAssertTrue((end - start) as Any is TimeInterval)
+        XCTAssertGreaterThan(end - start, 0)
+        XCTAssertTrue((start + end) as Any is TimeInterval)
+        XCTAssertTrue((start < end) as Any is Bool)
+        XCTAssertEqual(start < end, true)
+        XCTAssertTrue((start > end) as Any is Bool)
+        XCTAssertEqual(start > end, false)
     }
 
     func testTimeIntervalInitMethods () {

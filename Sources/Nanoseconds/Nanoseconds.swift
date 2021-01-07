@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Nanoseconds {
+public struct Now {
     var rawValue: Double
 
     public init() {
@@ -8,15 +8,15 @@ public struct Nanoseconds {
     }
 }
 
-extension Nanoseconds: Comparable {
-    public static func < (lhs: Nanoseconds, rhs: Nanoseconds) -> Bool {
+extension Now: Comparable {
+    public static func < (lhs: Now, rhs: Now) -> Bool {
         lhs.rawValue < rhs.rawValue
     }
-    public static func - (lhs: Nanoseconds, rhs: Nanoseconds) -> TimeInterval {
+    public static func - (lhs: Now, rhs: Now) -> TimeInterval {
         TimeInterval(lhs.rawValue - rhs.rawValue)
     }
 
-    public static func + (lhs: Nanoseconds, rhs: Nanoseconds) -> TimeInterval {
+    public static func + (lhs: Now, rhs: Now) -> TimeInterval {
         TimeInterval(lhs.rawValue + rhs.rawValue)
     }
 }
