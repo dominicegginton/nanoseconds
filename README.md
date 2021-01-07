@@ -26,10 +26,10 @@ Remember to add **Nanoseconds** to your target as a dependency.
 ## Documentation
 
 #### Creating Timestamps
-Creating high resolution timestamps with nanosecond accuracy is easy, simply create a instant of `Nanoseconds` struct
+Creating high resolution timestamps with nanosecond accuracy is easy, simply create a instant of `Now` struct
 
 ```  swift
-let foo = Nanoseconds()
+let foo = Now()
 ```
 
 #### Creating Time Intervals
@@ -37,9 +37,9 @@ let foo = Nanoseconds()
 Use the built-in operators overloads to easily calculate and initialize [**TimeInterval**](https://developer.apple.com/documentation/foundation/timeinterval):
 
 ``` swift
-let start = Nanoseconds()
+let start = Now()
 sleep(1)
-let end = Nanoseconds()
+let end = Now()
 let duration = end - start
 print(duration)  //=> 1004222113.0
 ```
