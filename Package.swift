@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "Nanoseconds", targets: ["Nanoseconds"])
     ],
     targets: [
-        .target(name: "Nanoseconds", dependencies: []),
+        .target(name: "Nanoseconds"),
         .testTarget(name: "NanosecondsTests", dependencies: ["Nanoseconds"])
     ]
 )
