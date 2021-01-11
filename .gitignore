@@ -1,7 +1,3 @@
-.DS_Store
-Packages
 .build/
-xcuserdata
-DerivedData/
 *.xcodeproj
 Package.resolved
