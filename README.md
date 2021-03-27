@@ -7,6 +7,7 @@ Nanoseconds proves high resolution time stamps for swift developers along with h
 - High resolution time stamp
 - Built-in operators overloads
 - Useful extensions for unit conversion
+- Covert time intervals to a human readable strings
 - Linux compatible
 
 ## Install
@@ -61,4 +62,13 @@ Use a provided init method to create a [**TimeInterval**](https://developer.appl
 
 ``` swift
 let duration = TimeInterval(seconds: 8)
+```
+
+#### Covert TimeIntervals Objects to human readable strings
+
+Use the provided `timeString` variable to convert [**TimeInterval**](https://developer.apple.com/documentation/foundation/timeinterval) objects into a human readable format:
+
+``` swift
+let duration = TimeInterval(hours: 1) + TimeInterval(seconds: 120)
+print(duration.timeString)  //=> 1h 1m 30s
 ```
