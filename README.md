@@ -1,10 +1,6 @@
-<h1 align='center'>Nanoseconds</h1>
-<h4 align='center'>Simple high resolution timing for Swift</h4>
-<div align='center'>
-  <img src='https://img.shields.io/github/workflow/status/dominicegginton/Nanoseconds/CI?label=CI'>
-  <img src='https://img.shields.io/github/v/tag/dominicegginton/Nanoseconds?include_prereleases&label=release'>
-  <img src="https://img.shields.io/github/license/dominicegginton/Nanoseconds">
-</div>
+![](./assets/cover.svg)
+
+Nanoseconds proves high resolution time stamps for swift developers along with helpful tools to work with them.
 
 ## Key Features
 
