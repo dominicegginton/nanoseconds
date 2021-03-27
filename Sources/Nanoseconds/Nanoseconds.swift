@@ -35,3 +35,21 @@ extension TimeInterval {
     public var minutes: Double { return self / 6e+10 }
     public var hours: Double { return self / 3.6e+12 }
 }
+
+extension TimeInterval {
+    public var timeString: String {
+        let date = Date(timeIntervalSince1970: self.seconds)
+        var calendar = Calendar.current
+        calendar.timeZone = TimeZone(identifier: "UTC")!
+        let hours = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let seconds = calendar.component(.second, from: date)
+        if (hours > 0) {
+            return "\(hours)h \(minutes)m \(seconds)s"
+        } else if (minutes > 0) {
+            return "\(minutes)m \(seconds)s"
+        } else {
+            return "\(seconds)s"
+        }
+    }
+}
