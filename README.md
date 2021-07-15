@@ -1,6 +1,6 @@
 ![](./assets/cover.svg)
 
-Nanoseconds proves high resolution time stamps for swift developers along with helpful tools to work with them.
+Simple high resolution time stamps for swift developers, along with helpful tools to work with them.
 
 ## Key Features
 
