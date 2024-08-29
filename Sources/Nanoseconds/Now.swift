@@ -13,7 +13,7 @@ public struct Now {
         Creates a new `Now` instance.
     */
     public init() {
-        self.rawValue = DispatchTime.now().rawValue
+        self.rawValue = clock_gettime_nsec_np(CLOCK_MONOTONIC)
     }
 }
 
