@@ -3,10 +3,6 @@
 pkgs.mkShell.override { inherit (swift) stdenv; }
 
 {
-  buildInputs = with pkgs; [
-    swift
-    swiftPackages.Foundation
-    swiftpm
-    swiftpm2nix
-  ];
+  inputsFrom = [ pkgs.nanoseconds ];
+  packages = [ pkgs.swiftpm2nix ];
 }
