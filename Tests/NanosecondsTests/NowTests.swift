@@ -60,7 +60,7 @@ final class NowTests: XCTestCase {
         sleep(1)
         let end = Now()
         let difference = end - start
-        XCTAssertLessThan(difference, TimeInterval(nanoseconds: Double(end.rawValue)))
+        XCTAssertGreaterThanOrEqual(difference, 1)
     }
 
     func testAdd() {
